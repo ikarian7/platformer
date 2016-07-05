@@ -1,0 +1,706 @@
+﻿Log file open, 07/05/16 12:46:39
+LogInit:Display: Running engine for game: platformer
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-606219304) SRandInit(-606219302).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.109955
+LogInit: Version: 4.12.4-3028348+++UE4+Release-4.12
+LogInit: API Version: 2992821
+LogInit: Net Version: 3028348
+LogDevObjectVersion: Number of dev versions registered: 13
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 3
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 1
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 2
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 6
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 2
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 0
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogInit: Compiled (64-bit): Jun 27 2016 09:29:04
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.12
+LogInit: Command line: -EpicPortal 
+LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.12/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.07.05-10.46.39:461][  0]LogInit: Selected Device Profile: [Windows]
+[2016.07.05-10.46.39:461][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.07.05-10.46.39:475][  0]LogInit: Computer: BLUBJES-PC
+[2016.07.05-10.46.39:475][  0]LogInit: User: Scott
+[2016.07.05-10.46.39:475][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.07.05-10.46.39:475][  0]LogInit: High frequency timer resolution =2.143569 MHz
+[2016.07.05-10.46.39:475][  0]LogMemory: Memory total: Physical=15.8GB (16GB approx)
+[2016.07.05-10.46.39:475][  0]LogMemory: Platform Memory Stats for Windows
+[2016.07.05-10.46.39:475][  0]LogMemory: Process Physical Memory: 188.34 MB used, 188.34 MB peak
+[2016.07.05-10.46.39:475][  0]LogMemory: Process Virtual Memory: 194.83 MB used, 194.83 MB peak
+[2016.07.05-10.46.39:475][  0]LogMemory: Physical Memory: 6964.96 MB used, 16199.27 MB total
+[2016.07.05-10.46.39:475][  0]LogMemory: Virtual Memory: 532.07 MB used, 134217728.00 MB total
+[2016.07.05-10.46.39:551][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.07.05-10.46.40:162][  0]LogD3D11RHI: D3D11 adapters:
+[2016.07.05-10.46.40:214][  0]LogD3D11RHI:    0. 'Intel(R) HD Graphics 4000' (Feature Level 11_0)
+[2016.07.05-10.46.40:214][  0]LogD3D11RHI:       96/0/1696 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x8086
+[2016.07.05-10.46.40:241][  0]LogD3D11RHI:    1. 'NVIDIA GeForce GT 730M ' (Feature Level 11_0)
+[2016.07.05-10.46.40:241][  0]LogD3D11RHI:       1985/0/2048 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x10de
+[2016.07.05-10.46.40:243][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.07.05-10.46.40:243][  0]LogD3D11RHI:       0/0/256 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2016.07.05-10.46.40:243][  0]LogD3D11RHI: Chosen D3D11 Adapter: 1
+[2016.07.05-10.46.40:255][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.07.05-10.46.40:256][  0]LogD3D11RHI:     GPU DeviceId: 0xfe1 (for the marketing name, search the web for "GPU Device Id")
+[2016.07.05-10.46.40:256][  0]LogWindows: EnumDisplayDevices:
+[2016.07.05-10.46.40:256][  0]LogWindows:    0. 'Intel(R) HD Graphics 4000' (P:1 D:1)
+[2016.07.05-10.46.40:256][  0]LogWindows:    1. 'Intel(R) HD Graphics 4000' (P:0 D:0)
+[2016.07.05-10.46.40:257][  0]LogWindows:    2. 'Intel(R) HD Graphics 4000' (P:0 D:0)
+[2016.07.05-10.46.40:257][  0]LogWindows:    3. 'NVIDIA GeForce GT 730M ' (P:0 D:0)
+[2016.07.05-10.46.40:257][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter 
+[2016.07.05-10.46.40:257][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GT 730M 
+[2016.07.05-10.46.40:257][  0]LogD3D11RHI:   Driver Version: 361.91 (internal:10.18.13.6191, unified:361.91)
+[2016.07.05-10.46.40:257][  0]LogD3D11RHI:      Driver Date: 2-8-2016
+[2016.07.05-10.46.40:257][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.07.05-10.46.40:275][  0]LogD3D11RHI: Async texture creation enabled
+[2016.07.05-10.46.40:294][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2016.07.05-10.46.40:294][  0]LogShaderCompilers: Guid format shader working directory is -20 characters bigger than the processId version (../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Intermediate/Shaders/WorkingDirectory/7596/).
+[2016.07.05-10.46.40:295][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Scott/AppData/Local/Temp/UnrealShaderWorkingDir/422031DE42E655B21A41F08F28D6BC34/'.
+[2016.07.05-10.46.40:295][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.07.05-10.46.42:925][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.07.05-10.46.42:942][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.07.05-10.46.42:959][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.07.05-10.46.42:977][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.07.05-10.46.42:995][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.07.05-10.46.43:009][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.07.05-10.46.43:023][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.07.05-10.46.43:037][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.07.05-10.46.43:051][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.07.05-10.46.43:065][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.07.05-10.46.43:078][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.07.05-10.46.43:106][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.07.05-10.46.43:106][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.07.05-10.46.43:108][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.07.05-10.46.43:139][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.07.05-10.46.43:152][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.07.05-10.46.43:166][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.07.05-10.46.43:179][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.07.05-10.46.43:193][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.07.05-10.46.43:193][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.07.05-10.46.43:368][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.07.05-10.46.45:450][  0]LogDerivedDataCache: Loaded boot cache 2.08s 62MB C:/Users/Scott/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.07.05-10.46.45:451][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Scott/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
+[2016.07.05-10.46.45:451][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Scott/Documents/Unreal Projects/platformer/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.07.05-10.46.45:451][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.07.05-10.46.45:451][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Scott/Documents/Unreal Projects/platformer/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.07.05-10.46.45:451][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.07.05-10.46.45:481][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.07.05-10.46.45:494][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Scott/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.07.05-10.46.45:840][  0]LogInit: Selected Device Profile: [Windows]
+[2016.07.05-10.46.45:841][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.07.05-10.46.46:117][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.07.05-10.46.46:117][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.07.05-10.46.46:117][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.07.05-10.46.46:672][  0]LogAssetRegistry: FAssetRegistry took 0.0220 seconds to start up
+[2016.07.05-10.46.46:720][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.042409 seconds
+[2016.07.05-10.46.46:727][  0]LogUObjectArray: 28739 objects as part of root set at end of initial load.
+[2016.07.05-10.46.46:727][  0]LogUObjectAllocator: 5855624 out of 0 bytes used by permanent object pool.
+[2016.07.05-10.46.46:727][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.07.05-10.46.46:744][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.07.05-10.46.47:628][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.07.05-10.46.47:628][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.07.05-10.47.29:404][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.07.05-10.47.30:345][  0]SourceControl: Info Source control is disabled
+[2016.07.05-10.47.30:729][  0]SourceControl: Info Source control is disabled
+[2016.07.05-10.47.30:750][  0]SourceControl: Info Source control is disabled
+[2016.07.05-10.47.30:769][  0]SourceControl: Info Source control is disabled
+[2016.07.05-10.47.31:296][  0]LogEngine: Initializing Engine...
+[2016.07.05-10.47.31:298][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.07.05-10.47.31:299][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.07.05-10.47.31:524][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.07.05-10.47.31:530][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.07.05-10.47.31:682][  0]LogInit: FAudioDevice initialized.
+[2016.07.05-10.47.31:722][  0]LogDerivedDataCache: Saved boot cache 0.04s 62MB C:/Users/Scott/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.07.05-10.47.31:727][  0]LogInit: Texture streaming: Enabled
+[2016.07.05-10.47.31:776][  0]LogInit: Transaction tracking system initialized
+[2016.07.05-10.47.31:832][  0]BlueprintLog: New page: Editor Load
+[2016.07.05-10.47.32:202][  0]LogInit:Warning: CVar named 'r.MobileHDR' marked up in RendererSettings was not found or is set to read-only
+[2016.07.05-10.47.33:306][  0]LocalizationService: Info Localization service is disabled
+[2016.07.05-10.47.33:682][  0]LogConsoleResponse:Display: 
+[2016.07.05-10.47.34:469][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Scott/Documents/Unreal Projects/platformer/Content/' took 0.01s
+[2016.07.05-10.47.34:469][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.07.05-10.47.34:469][  0]LogCook:Display: Mobile HDR setting 0
+[2016.07.05-10.47.34:942][  0]SourceControl: Info Source control is disabled
+[2016.07.05-10.47.35:210][  0]LogFactory: FactoryCreateFile: PackFactory with PackFactory (0 0 C:/Program Files (x86)/Epic Games/4.12/FeaturePacks/StarterContent.upack)
+[2016.07.05-10.47.35:293][  0]LogPackFactory: Finished extracting 8 files (including 0 errors).
+[2016.07.05-10.47.35:310][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Floor_400x400.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Architecture/Floor_400x400.uasset"
+[2016.07.05-10.47.35:326][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Pillar_50x500.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Architecture/Pillar_50x500.uasset"
+[2016.07.05-10.47.35:380][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/SM_AssetPlatform.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Architecture/SM_AssetPlatform.uasset"
+[2016.07.05-10.47.35:395][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x200.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Architecture/Wall_400x200.uasset"
+[2016.07.05-10.47.35:407][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x300.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Architecture/Wall_400x300.uasset"
+[2016.07.05-10.47.35:417][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x400.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Architecture/Wall_400x400.uasset"
+[2016.07.05-10.47.35:440][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_500x500.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Architecture/Wall_500x500.uasset"
+[2016.07.05-10.47.35:446][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x300.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Architecture/Wall_Door_400x300.uasset"
+[2016.07.05-10.47.35:495][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x400.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Architecture/Wall_Door_400x400.uasset"
+[2016.07.05-10.47.35:567][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x300.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Architecture/Wall_Window_400x300.uasset"
+[2016.07.05-10.47.35:620][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x400.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Architecture/Wall_Window_400x400.uasset"
+[2016.07.05-10.47.35:640][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse01.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Audio/Collapse01.uasset"
+[2016.07.05-10.47.35:656][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse02.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Audio/Collapse02.uasset"
+[2016.07.05-10.47.35:669][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse_Cue.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Audio/Collapse_Cue.uasset"
+[2016.07.05-10.47.35:687][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion01.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Audio/Explosion01.uasset"
+[2016.07.05-10.47.35:694][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion02.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Audio/Explosion02.uasset"
+[2016.07.05-10.47.35:700][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion_Cue.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Audio/Explosion_Cue.uasset"
+[2016.07.05-10.47.35:715][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Audio/Fire01.uasset"
+[2016.07.05-10.47.35:721][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01_Cue.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Audio/Fire01_Cue.uasset"
+[2016.07.05-10.47.35:746][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Audio/Fire_Sparks01.uasset"
+[2016.07.05-10.47.35:759][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset"
+[2016.07.05-10.47.35:788][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Audio/Light01.uasset"
+[2016.07.05-10.47.35:796][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01_Cue.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Audio/Light01_Cue.uasset"
+[2016.07.05-10.47.35:845][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Audio/Light02.uasset"
+[2016.07.05-10.47.35:854][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02_Cue.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Audio/Light02_Cue.uasset"
+[2016.07.05-10.47.35:899][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Audio/Smoke01.uasset"
+[2016.07.05-10.47.35:908][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01_Cue.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Audio/Smoke01_Cue.uasset"
+[2016.07.05-10.47.35:916][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Background_Cue.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Audio/Starter_Background_Cue.uasset"
+[2016.07.05-10.47.35:955][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Birds01.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Audio/Starter_Birds01.uasset"
+[2016.07.05-10.47.36:113][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music01.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Audio/Starter_Music01.uasset"
+[2016.07.05-10.47.36:135][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music_Cue.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Audio/Starter_Music_Cue.uasset"
+[2016.07.05-10.47.36:182][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind05.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Audio/Starter_Wind05.uasset"
+[2016.07.05-10.47.36:585][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind06.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Audio/Starter_Wind06.uasset"
+[2016.07.05-10.47.36:847][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Audio/Steam01.uasset"
+[2016.07.05-10.47.36:865][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01_Cue.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Audio/Steam01_Cue.uasset"
+[2016.07.05-10.47.36:877][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset"
+[2016.07.05-10.47.36:889][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset"
+[2016.07.05-10.47.36:906][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset"
+[2016.07.05-10.47.36:923][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset"
+[2016.07.05-10.47.36:929][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset"
+[2016.07.05-10.47.36:947][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset"
+[2016.07.05-10.47.37:001][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset"
+[2016.07.05-10.47.37:017][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/BP_LightStudio.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Blueprints/BP_LightStudio.uasset"
+[2016.07.05-10.47.37:033][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset"
+[2016.07.05-10.47.37:058][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset"
+[2016.07.05-10.47.37:067][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset"
+[2016.07.05-10.47.37:098][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset"
+[2016.07.05-10.47.37:110][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset"
+[2016.07.05-10.47.37:136][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/Skybox.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Blueprints/Assets/Skybox.uasset"
+[2016.07.05-10.47.37:190][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset"
+[2016.07.05-10.47.37:208][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset"
+[2016.07.05-10.47.38:525][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset"
+[2016.07.05-10.47.38:546][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Advanced_Lighting.umap" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Maps/Advanced_Lighting.umap"
+[2016.07.05-10.47.38:577][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Minimal_Default.umap" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Maps/Minimal_Default.umap"
+[2016.07.05-10.47.38:774][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/StarterMap.umap" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Maps/StarterMap.umap"
+[2016.07.05-10.47.38:789][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_AssetPlatform.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_AssetPlatform.uasset"
+[2016.07.05-10.47.38:792][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Floor.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Basic_Floor.uasset"
+[2016.07.05-10.47.38:799][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Wall.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Basic_Wall.uasset"
+[2016.07.05-10.47.38:808][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset"
+[2016.07.05-10.47.38:817][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_New.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Brick_Clay_New.uasset"
+[2016.07.05-10.47.38:826][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset"
+[2016.07.05-10.47.38:834][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset"
+[2016.07.05-10.47.38:842][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset"
+[2016.07.05-10.47.38:851][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset"
+[2016.07.05-10.47.38:860][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset"
+[2016.07.05-10.47.38:869][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset"
+[2016.07.05-10.47.38:878][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset"
+[2016.07.05-10.47.38:884][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset"
+[2016.07.05-10.47.38:892][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Grime.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Concrete_Grime.uasset"
+[2016.07.05-10.47.38:907][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Panels.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Concrete_Panels.uasset"
+[2016.07.05-10.47.38:994][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Poured.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Concrete_Poured.uasset"
+[2016.07.05-10.47.39:169][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Tiles.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Concrete_Tiles.uasset"
+[2016.07.05-10.47.39:278][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Glass.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Glass.uasset"
+[2016.07.05-10.47.39:366][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Grass.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Ground_Grass.uasset"
+[2016.07.05-10.47.39:501][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Gravel.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Ground_Gravel.uasset"
+[2016.07.05-10.47.39:582][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Moss.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Ground_Moss.uasset"
+[2016.07.05-10.47.39:591][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset"
+[2016.07.05-10.47.39:600][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset"
+[2016.07.05-10.47.39:609][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Chrome.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Metal_Chrome.uasset"
+[2016.07.05-10.47.39:618][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Copper.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Metal_Copper.uasset"
+[2016.07.05-10.47.39:628][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Gold.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Metal_Gold.uasset"
+[2016.07.05-10.47.39:638][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Rust.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Metal_Rust.uasset"
+[2016.07.05-10.47.39:647][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Steel.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Metal_Steel.uasset"
+[2016.07.05-10.47.39:656][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Basalt.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Rock_Basalt.uasset"
+[2016.07.05-10.47.39:664][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset"
+[2016.07.05-10.47.39:672][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Sandstone.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Rock_Sandstone.uasset"
+[2016.07.05-10.47.39:681][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Slate.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Rock_Slate.uasset"
+[2016.07.05-10.47.39:691][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset"
+[2016.07.05-10.47.39:700][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset"
+[2016.07.05-10.47.39:710][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset"
+[2016.07.05-10.47.39:718][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Panel.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Tech_Panel.uasset"
+[2016.07.05-10.47.39:728][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Lake.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Water_Lake.uasset"
+[2016.07.05-10.47.39:737][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Ocean.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Water_Ocean.uasset"
+[2016.07.05-10.47.39:752][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset"
+[2016.07.05-10.47.39:761][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset"
+[2016.07.05-10.47.39:771][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Oak.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Wood_Oak.uasset"
+[2016.07.05-10.47.39:781][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Pine.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Wood_Pine.uasset"
+[2016.07.05-10.47.39:789][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Walnut.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Materials/M_Wood_Walnut.uasset"
+[2016.07.05-10.47.39:801][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Ambient_Dust.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Particles/P_Ambient_Dust.uasset"
+[2016.07.05-10.47.39:811][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Explosion.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Particles/P_Explosion.uasset"
+[2016.07.05-10.47.39:820][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Fire.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Particles/P_Fire.uasset"
+[2016.07.05-10.47.39:828][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Smoke.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Particles/P_Smoke.uasset"
+[2016.07.05-10.47.39:834][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Sparks.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Particles/P_Sparks.uasset"
+[2016.07.05-10.47.39:843][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Steam_Lit.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Particles/P_Steam_Lit.uasset"
+[2016.07.05-10.47.39:855][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Burst.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Particles/Materials/M_Burst.uasset"
+[2016.07.05-10.47.39:857][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset"
+[2016.07.05-10.47.39:865][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset"
+[2016.07.05-10.47.39:874][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset"
+[2016.07.05-10.47.39:876][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/m_flare_01.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Particles/Materials/m_flare_01.uasset"
+[2016.07.05-10.47.39:916][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset"
+[2016.07.05-10.47.39:926][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset"
+[2016.07.05-10.47.39:937][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset"
+[2016.07.05-10.47.39:947][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset"
+[2016.07.05-10.47.39:957][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Spark.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Particles/Materials/M_Spark.uasset"
+[2016.07.05-10.47.39:962][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/MaterialSphere.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Props/MaterialSphere.uasset"
+[2016.07.05-10.47.39:971][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Bush.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Props/SM_Bush.uasset"
+[2016.07.05-10.47.39:980][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Chair.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Props/SM_Chair.uasset"
+[2016.07.05-10.47.39:989][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_CornerFrame.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Props/SM_CornerFrame.uasset"
+[2016.07.05-10.47.39:998][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Couch.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Props/SM_Couch.uasset"
+[2016.07.05-10.47.40:006][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Door.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Props/SM_Door.uasset"
+[2016.07.05-10.47.40:008][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_DoorFrame.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Props/SM_DoorFrame.uasset"
+[2016.07.05-10.47.40:037][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_GlassWindow.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Props/SM_GlassWindow.uasset"
+[2016.07.05-10.47.40:047][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset"
+[2016.07.05-10.47.40:060][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Lamp_Wall.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Props/SM_Lamp_Wall.uasset"
+[2016.07.05-10.47.40:117][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset"
+[2016.07.05-10.47.40:136][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_PillarFrame.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Props/SM_PillarFrame.uasset"
+[2016.07.05-10.47.40:146][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_PillarFrame300.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Props/SM_PillarFrame300.uasset"
+[2016.07.05-10.47.40:155][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Rock.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Props/SM_Rock.uasset"
+[2016.07.05-10.47.40:164][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Shelf.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Props/SM_Shelf.uasset"
+[2016.07.05-10.47.40:166][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Stairs.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Props/SM_Stairs.uasset"
+[2016.07.05-10.47.40:190][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Statue.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Props/SM_Statue.uasset"
+[2016.07.05-10.47.40:207][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_TableRound.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Props/SM_TableRound.uasset"
+[2016.07.05-10.47.40:213][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_WindowFrame.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Props/SM_WindowFrame.uasset"
+[2016.07.05-10.47.40:219][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Bush.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Props/Materials/M_Bush.uasset"
+[2016.07.05-10.47.40:229][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Chair.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Props/Materials/M_Chair.uasset"
+[2016.07.05-10.47.40:239][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Door.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Props/Materials/M_Door.uasset"
+[2016.07.05-10.47.40:249][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Frame.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Props/Materials/M_Frame.uasset"
+[2016.07.05-10.47.40:302][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Lamp.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Props/Materials/M_Lamp.uasset"
+[2016.07.05-10.47.40:613][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset"
+[2016.07.05-10.47.40:721][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset"
+[2016.07.05-10.47.40:974][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Rock.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Props/Materials/M_Rock.uasset"
+[2016.07.05-10.47.41:085][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Shelf.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Props/Materials/M_Shelf.uasset"
+[2016.07.05-10.47.41:239][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Statue.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Props/Materials/M_Statue.uasset"
+[2016.07.05-10.47.41:770][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_StatueGlass.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Props/Materials/M_StatueGlass.uasset"
+[2016.07.05-10.47.42:099][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_TableRound.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Props/Materials/M_TableRound.uasset"
+[2016.07.05-10.47.42:382][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cone.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Shapes/Shape_Cone.uasset"
+[2016.07.05-10.47.42:517][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cube.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Shapes/Shape_Cube.uasset"
+[2016.07.05-10.47.42:525][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cylinder.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Shapes/Shape_Cylinder.uasset"
+[2016.07.05-10.47.42:534][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset"
+[2016.07.05-10.47.42:538][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Shapes/Shape_Pipe.uasset"
+[2016.07.05-10.47.42:548][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe_180.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Shapes/Shape_Pipe_180.uasset"
+[2016.07.05-10.47.42:557][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe_90.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Shapes/Shape_Pipe_90.uasset"
+[2016.07.05-10.47.42:559][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Plane.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Shapes/Shape_Plane.uasset"
+[2016.07.05-10.47.42:561][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset"
+[2016.07.05-10.47.42:589][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Sphere.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Shapes/Shape_Sphere.uasset"
+[2016.07.05-10.47.42:617][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Torus.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Shapes/Shape_Torus.uasset"
+[2016.07.05-10.47.42:621][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Shapes/Shape_Trim.uasset"
+[2016.07.05-10.47.42:635][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset"
+[2016.07.05-10.47.42:645][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset"
+[2016.07.05-10.47.42:664][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_TriPyramid.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Shapes/Shape_TriPyramid.uasset"
+[2016.07.05-10.47.42:677][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Tube.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Shapes/Shape_Tube.uasset"
+[2016.07.05-10.47.42:698][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Wedge_A.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Shapes/Shape_Wedge_A.uasset"
+[2016.07.05-10.47.42:715][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Wedge_B.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Shapes/Shape_Wedge_B.uasset"
+[2016.07.05-10.47.42:721][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_WideCapsule.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Shapes/Shape_WideCapsule.uasset"
+[2016.07.05-10.47.42:838][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset"
+[2016.07.05-10.47.42:976][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset"
+[2016.07.05-10.47.43:414][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset"
+[2016.07.05-10.47.44:120][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset"
+[2016.07.05-10.47.44:257][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset"
+[2016.07.05-10.47.44:380][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset"
+[2016.07.05-10.47.44:931][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset"
+[2016.07.05-10.47.45:062][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset"
+[2016.07.05-10.47.45:224][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset"
+[2016.07.05-10.47.45:309][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset"
+[2016.07.05-10.47.45:407][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset"
+[2016.07.05-10.47.45:498][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset"
+[2016.07.05-10.47.45:612][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset"
+[2016.07.05-10.47.45:713][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Burst_M.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Burst_M.uasset"
+[2016.07.05-10.47.45:739][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Bush_D.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Bush_D.uasset"
+[2016.07.05-10.47.45:915][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Bush_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Bush_N.uasset"
+[2016.07.05-10.47.46:419][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset"
+[2016.07.05-10.47.46:759][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset"
+[2016.07.05-10.47.46:954][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Chair_M.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Chair_M.uasset"
+[2016.07.05-10.47.47:109][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Chair_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Chair_N.uasset"
+[2016.07.05-10.47.47:291][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Checker_Noise_M.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Checker_Noise_M.uasset"
+[2016.07.05-10.47.47:650][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset"
+[2016.07.05-10.47.47:673][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset"
+[2016.07.05-10.47.47:844][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset"
+[2016.07.05-10.47.47:895][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset"
+[2016.07.05-10.47.47:937][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset"
+[2016.07.05-10.47.48:021][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset"
+[2016.07.05-10.47.48:151][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset"
+[2016.07.05-10.47.48:263][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset"
+[2016.07.05-10.47.48:402][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset"
+[2016.07.05-10.47.50:843][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset"
+[2016.07.05-10.47.52:194][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset"
+[2016.07.05-10.47.52:405][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset"
+[2016.07.05-10.47.52:689][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset"
+[2016.07.05-10.47.52:771][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset"
+[2016.07.05-10.47.53:513][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset"
+[2016.07.05-10.47.53:618][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset"
+[2016.07.05-10.47.53:656][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset"
+[2016.07.05-10.47.53:725][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset"
+[2016.07.05-10.47.53:755][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Door_M.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Door_M.uasset"
+[2016.07.05-10.47.53:781][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Door_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Door_N.uasset"
+[2016.07.05-10.47.53:807][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Dust_Particle_D.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Dust_Particle_D.uasset"
+[2016.07.05-10.47.53:876][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Explosion_SubUV.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Explosion_SubUV.uasset"
+[2016.07.05-10.47.53:908][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Fire_SubUV.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Fire_SubUV.uasset"
+[2016.07.05-10.47.53:926][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset"
+[2016.07.05-10.47.53:967][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Frame_M.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Frame_M.uasset"
+[2016.07.05-10.47.54:014][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Frame_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Frame_N.uasset"
+[2016.07.05-10.47.54:034][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Gradinet_01.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Gradinet_01.uasset"
+[2016.07.05-10.47.55:164][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Grass_D.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Ground_Grass_D.uasset"
+[2016.07.05-10.47.55:378][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Grass_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Ground_Grass_N.uasset"
+[2016.07.05-10.47.55:528][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset"
+[2016.07.05-10.47.56:880][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset"
+[2016.07.05-10.47.57:878][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_ground_Moss_D.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_ground_Moss_D.uasset"
+[2016.07.05-10.47.58:008][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Moss_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Ground_Moss_N.uasset"
+[2016.07.05-10.47.58:036][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Lamp_M.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Lamp_M.uasset"
+[2016.07.05-10.47.58:088][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Lamp_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Lamp_N.uasset"
+[2016.07.05-10.47.59:500][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_MacroVariation.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_MacroVariation.uasset"
+[2016.07.05-10.47.59:809][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset"
+[2016.07.05-10.48.00:948][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Copper_D.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Metal_Copper_D.uasset"
+[2016.07.05-10.48.02:263][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Gold_D.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Metal_Gold_D.uasset"
+[2016.07.05-10.48.02:339][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Gold_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Metal_Gold_N.uasset"
+[2016.07.05-10.48.02:878][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Rust_D.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Metal_Rust_D.uasset"
+[2016.07.05-10.48.03:135][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Rust_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Metal_Rust_N.uasset"
+[2016.07.05-10.48.03:207][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Steel_D.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Metal_Steel_D.uasset"
+[2016.07.05-10.48.03:304][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Steel_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Metal_Steel_N.uasset"
+[2016.07.05-10.48.03:423][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset"
+[2016.07.05-10.48.03:492][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_RockMesh_M.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_RockMesh_M.uasset"
+[2016.07.05-10.48.03:597][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_RockMesh_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_RockMesh_N.uasset"
+[2016.07.05-10.48.04:622][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset"
+[2016.07.05-10.48.04:788][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset"
+[2016.07.05-10.48.06:102][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset"
+[2016.07.05-10.48.06:280][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset"
+[2016.07.05-10.48.07:335][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset"
+[2016.07.05-10.48.07:511][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Slate_D.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Rock_Slate_D.uasset"
+[2016.07.05-10.48.07:627][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Slate_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Rock_Slate_N.uasset"
+[2016.07.05-10.48.07:733][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset"
+[2016.07.05-10.48.07:747][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Shelf_M.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Shelf_M.uasset"
+[2016.07.05-10.48.07:790][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Shelf_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Shelf_N.uasset"
+[2016.07.05-10.48.07:810][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Single_Tile_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Single_Tile_N.uasset"
+[2016.07.05-10.48.08:688][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Smoke_SubUV.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Smoke_SubUV.uasset"
+[2016.07.05-10.48.08:716][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset"
+[2016.07.05-10.48.08:732][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Spark_Core.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Spark_Core.uasset"
+[2016.07.05-10.48.08:752][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Statue_M.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Statue_M.uasset"
+[2016.07.05-10.48.08:773][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Statue_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Statue_N.uasset"
+[2016.07.05-10.48.08:793][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_TableRound_M.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_TableRound_M.uasset"
+[2016.07.05-10.48.08:847][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_TableRound_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_TableRound_N.uasset"
+[2016.07.05-10.48.08:869][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Dot_M.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Tech_Dot_M.uasset"
+[2016.07.05-10.48.08:887][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Dot_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Tech_Dot_N.uasset"
+[2016.07.05-10.48.08:904][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset"
+[2016.07.05-10.48.08:916][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset"
+[2016.07.05-10.48.08:943][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Panel_M.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Tech_Panel_M.uasset"
+[2016.07.05-10.48.08:981][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Panel_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Tech_Panel_N.uasset"
+[2016.07.05-10.48.09:012][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Water_M.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Water_M.uasset"
+[2016.07.05-10.48.09:050][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Water_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Water_N.uasset"
+[2016.07.05-10.48.09:141][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset"
+[2016.07.05-10.48.09:991][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset"
+[2016.07.05-10.48.10:039][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset"
+[2016.07.05-10.48.10:137][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Oak_D.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Wood_Oak_D.uasset"
+[2016.07.05-10.48.10:232][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Oak_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Wood_Oak_N.uasset"
+[2016.07.05-10.48.10:346][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Pine_D.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Wood_Pine_D.uasset"
+[2016.07.05-10.48.10:410][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Pine_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Wood_Pine_N.uasset"
+[2016.07.05-10.48.10:507][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset"
+[2016.07.05-10.48.11:849][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset" to "../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset"
+[2016.07.05-10.48.14:412][  0]LogRenderer: Reallocating scene render targets to support 256x256 (Frame:2).
+[2016.07.05-10.48.17:886][  0]LogSavePackage: Save=256.66ms
+[2016.07.05-10.48.17:886][  0]LogSavePackage: Moving '../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Saved/Floor_400x4006B22AC9A4DB57A82092795B93B3F9DD1.tmp' to '../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Architecture/Floor_400x400.uasset'
+[2016.07.05-10.48.17:891][  0]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/StarterContent/Architecture/Floor_400x400.uasset
+[2016.07.05-10.48.17:905][  0]LogFeaturePack:Warning: Inserted 1 feature packs
+[2016.07.05-10.48.17:908][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Content/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.07.05-10.48.17:908][  0]LightingResults: New page: Lighting Build
+[2016.07.05-10.48.17:916][  0]MapCheck: New page: Map Check
+[2016.07.05-10.48.17:916][  0]LightingResults: New page: Lighting Build
+[2016.07.05-10.48.18:619][  0]LogTexture:Display: Building textures: 2DCharacter_RunAnimAtlas (AutoDXT)
+[2016.07.05-10.48.19:051][  0]LogTexture:Display: Building textures: 2DCharacter_IdleAnimAtlas (AutoDXT)
+[2016.07.05-10.48.19:351][  0]LogTexture:Display: Building textures: Bokeh_5Sides (BGRA8)
+[2016.07.05-10.48.19:728][  0]LogTexture:Display: Building textures: T_ScreenDirt02_w (AutoDXT)
+[2016.07.05-10.48.20:370][  0]LogTexture:Display: Building textures: 2DBackgroundBlockAtlas (AutoDXT)
+[2016.07.05-10.48.20:602][  0]LogTexture:Display: Building textures: 2DBackground (BGRA8)
+[2016.07.05-10.48.20:741][  0]LogAIModule: Creating AISystem for world 2DSideScrollerExampleMap
+[2016.07.05-10.48.20:959][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.07.05-10.48.20:998][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.07.05-10.48.21:143][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 144.568ms to complete.
+[2016.07.05-10.48.21:143][  0]LogFileHelpers: Loading map '2DSideScrollerExampleMap' took 3.236
+[2016.07.05-10.48.24:833][  0]LogCollectionManager: Loaded 0 collections in 0.005990 seconds
+[2016.07.05-10.48.25:212][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Scott/Documents/Unreal Projects/platformer/Saved/Collections/' took 0.01s
+[2016.07.05-10.48.25:212][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Scott/Documents/Unreal Projects/platformer/Content/Developers/Scott/Collections/' took 0.01s
+[2016.07.05-10.48.25:212][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Scott/Documents/Unreal Projects/platformer/Content/Collections/' took 0.01s
+[2016.07.05-10.48.25:212][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000004 seconds
+[2016.07.05-10.48.25:256][  0]LogContentBrowser: Native class hierarchy populated in 0.0417 seconds. Added 2047 classes and 369 folders.
+[2016.07.05-10.48.25:397][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.011 s
+[2016.07.05-10.48.25:426][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.030 s
+[2016.07.05-10.48.25:437][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0008 seconds. Added 12 classes and 0 folders.
+[2016.07.05-10.48.25:484][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2016.07.05-10.48.26:128][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0007 seconds. Added 0 classes and 0 folders.
+[2016.07.05-10.48.26:235][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0007 seconds. Added 1 classes and 2 folders.
+[2016.07.05-10.48.27:945][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.07.05-10.48.28:467][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.07.05-10.48.28:526][  0]LogTexture:Display: Building textures: Blueprint_64x (BGRA8)
+[2016.07.05-10.48.28:529][  0]LogTexture:Display: Building textures: icon_Editor_Preferences_General_40x (BGRA8)
+[2016.07.05-10.48.28:532][  0]LogTexture:Display: Building textures: Paper2DSprite_TutorialIcon (BGRA8)
+[2016.07.05-10.48.28:545][  0]LogTexture:Display: Building textures: icon_ShowSkeletalMeshes_40x (BGRA8)
+[2016.07.05-10.48.28:548][  0]LogTexture:Display: Building textures: Landscape (BGRA8)
+[2016.07.05-10.48.28:551][  0]LogTexture:Display: Building textures: Foliage (BGRA8)
+[2016.07.05-10.48.28:745][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0008 seconds. Added 1 classes and 2 folders.
+[2016.07.05-10.48.28:745][  0]LogLoad: Full Startup: 110.63 seconds (BP compile: 0.17 seconds)
+[2016.07.05-10.48.28:745][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
+[2016.07.05-10.48.28:763][  0]LogOcInput: OculusInput pre-init called
+[2016.07.05-10.48.29:279][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.07.05-10.48.29:574][  0]LogTexture:Display: Building textures: icon_tab_Levels_40x (BGRA8)
+[2016.07.05-10.48.30:307][  0]LogTexture:Display: Building textures: LevelGrid1DStripes (BGRA8)
+[2016.07.05-10.48.32:496][  0]LogRenderer: Reallocating scene render targets to support 1208x576 (Frame:3).
+[2016.07.05-10.48.33:139][  1]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Ledge_14)
+[2016.07.05-10.48.38:247][  4]LogAssetRegistry: Asset discovery search completed in 111.5978 seconds
+[2016.07.05-10.48.38:247][  4]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2016.07.05-10.48.38:247][  4]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000042 seconds (updated 0 objects)
+[2016.07.05-10.48.44:539][127]LogTexture:Display: Building textures: CameraActor_64x (BGRA8)
+[2016.07.05-10.48.44:549][127]LogTexture:Display: Building textures: BlueprintInterface_64x (BGRA8)
+[2016.07.05-10.48.44:556][127]LogTexture:Display: Building textures: BlueprintMacroLibrary_64x (BGRA8)
+[2016.07.05-10.48.44:860][127]LogTexture:Display: Building textures: IOS (BGRA8)
+[2016.07.05-10.48.44:871][127]LogTexture:Display: Building textures: android_Icon (BGRA8)
+[2016.07.05-10.48.44:893][127]LogTexture:Display: Building textures: Paper2DFlipbook_TutorialIcon (BGRA8)
+[2016.07.05-10.48.50:126][408]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Ledge_14)
+[2016.07.05-10.48.50:184][408]LogEditorViewport: Clicking on Component (LMB): PaperSpriteComponent (RenderComponent)
+[2016.07.05-10.48.51:672][470]LogEditorViewport: Clicking on Actor (double click): PaperSpriteActor (Ledge_14)
+[2016.07.05-10.48.51:937][482]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Ledge_14)
+[2016.07.05-10.48.52:694][523]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Ledge_14)
+[2016.07.05-10.48.53:512][568]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Background_Sprite)
+[2016.07.05-10.48.53:557][568]LogEditorViewport: Clicking on Component (LMB): PaperSpriteComponent (RenderComponent)
+[2016.07.05-10.49.50:951][492]LogTexture:Display: Building textures: WhiteSquareTexture (AutoDXT)
+[2016.07.05-10.49.51:850][492]LogTexture:Display: Building textures: Texture2D_2 (G8)
+[2016.07.05-10.49.51:869][492]LogTexture:Display: Building textures: LandscapeThumbnailWeightmap (BGRA8)
+[2016.07.05-10.49.51:900][492]LogTexture:Display: Building textures: LandscapeThumbnailHeightmap (BGRA8)
+[2016.07.05-10.50.10:755][374]LogEditorViewport: Clicking on Actor (context menu): PaperSpriteActor (Background_Sprite)
+[2016.07.05-10.50.19:531][780]LogEditorViewport: Clicking on Actor (context menu): TriggerBox (TriggerBox)
+[2016.07.05-10.50.23:901][ 23]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Background_Sprite)
+[2016.07.05-10.50.24:635][ 58]LogEditorViewport: Clicking on Actor (LMB): TriggerBox (TriggerBox)
+[2016.07.05-10.50.25:288][ 92]LogEditorViewport: Clicking on Component (LMB): BoxComponent (CollisionComp)
+[2016.07.05-10.50.25:543][103]LogEditorViewport: Clicking on Component (LMB): BoxComponent (CollisionComp)
+[2016.07.05-10.50.29:970][341]LogEditorViewport: Clicking on Component (context menu): BoxComponent (CollisionComp)
+[2016.07.05-10.50.41:618][983]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2016.07.05-10.50.42:886][ 55]LogEditorViewport: Clicking on Actor (context menu): TriggerBox (TriggerBox)
+[2016.07.05-10.50.59:011][961]Cmd: DELETE
+[2016.07.05-10.50.59:011][961]Cmd: ACTOR DELETE
+[2016.07.05-10.50.59:328][961]LogEditorActor: Deleted Actor: TriggerBox
+[2016.07.05-10.50.59:410][961]LogEditorActor: Deleted 1 Actors (0.109 secs)
+[2016.07.05-10.51.05:375][302]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel.2DSideScrollerExampleMap' with GeneratedClass '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap_C' with ClassGeneratedBy '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel.2DSideScrollerExampleMap'
+[2016.07.05-10.51.05:376][302]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.07.05-10.51.05:713][302]PIE: New page: PIE session: 2DSideScrollerExampleMap (Jul 5, 2016, 1:51:05 PM)
+[2016.07.05-10.51.05:713][302]LogPlayLevel: Creating play world package: /Game/2DSideScrollerBP/Maps/UEDPIE_0_2DSideScrollerExampleMap
+[2016.07.05-10.51.05:788][302]LogPlayLevel: PIE: StaticDuplicateObject took: (0.074889s)
+[2016.07.05-10.51.05:789][302]LogAIModule: Creating AISystem for world 2DSideScrollerExampleMap
+[2016.07.05-10.51.05:789][302]LogPlayLevel: PIE: World Init took: (0.000884s)
+[2016.07.05-10.51.05:855][302]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap to /Game/2DSideScrollerBP/Maps/UEDPIE_0_2DSideScrollerExampleMap.2DSideScrollerExampleMap (0.142288s)
+[2016.07.05-10.51.05:928][302]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.07.05-10.51.05:942][302]LogInit: FAudioDevice initialized.
+[2016.07.05-10.51.06:238][302]LogWorld: Game class is '2DSideScrollerGameMode_C'
+[2016.07.05-10.51.07:270][302]LogWorld: Bringing World /Game/2DSideScrollerBP/Maps/UEDPIE_0_2DSideScrollerExampleMap.2DSideScrollerExampleMap up for play (max tick rate 60) at 2016.07.05-12.51.07
+[2016.07.05-10.51.07:399][302]LogWorld: Bringing up level for play took: 0.135745
+[2016.07.05-10.51.07:834][302]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0008 seconds. Added 11 classes and 0 folders.
+[2016.07.05-10.51.07:877][302]PIE: Info Play in editor start time for /Game/2DSideScrollerBP/Maps/UEDPIE_0_2DSideScrollerExampleMap 2.865
+[2016.07.05-10.51.07:877][302]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel.2DSideScrollerExampleMap' with GeneratedClass '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap_C' with ClassGeneratedBy '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel.2DSideScrollerExampleMap'
+[2016.07.05-10.51.40:100][ 11]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel.2DSideScrollerExampleMap' with GeneratedClass '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap_C' with ClassGeneratedBy '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel.2DSideScrollerExampleMap'
+[2016.07.05-10.51.40:244][ 11]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel.2DSideScrollerExampleMap' with GeneratedClass '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap_C' with ClassGeneratedBy '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel.2DSideScrollerExampleMap'
+[2016.07.05-10.51.54:840][458]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Background_Sprite)
+[2016.07.05-10.51.54:931][458]LogEditorViewport: Clicking on Component (LMB): PaperSpriteComponent (RenderComponent)
+[2016.07.05-10.51.55:602][476]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Ledge_12)
+[2016.07.05-10.51.55:705][476]LogEditorViewport: Clicking on Component (LMB): PaperSpriteComponent (RenderComponent)
+[2016.07.05-10.52.01:985][662]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Background_Sprite)
+[2016.07.05-10.52.03:247][696]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Ledge_12)
+[2016.07.05-10.52.08:663][857]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Ledge_13)
+[2016.07.05-10.52.33:560][869]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (RightEdge)
+[2016.07.05-10.52.34:039][883]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (RightEdge)
+[2016.07.05-10.52.34:120][883]LogEditorViewport: Clicking on Component (LMB): PaperSpriteComponent (RenderComponent)
+[2016.07.05-10.52.35:691][936]LogEditorViewport: Clicking on Component (context menu): PaperSpriteComponent (RenderComponent)
+[2016.07.05-10.52.37:885][983]LogEditorViewport: Clicking on Component (LMB): PaperSpriteComponent (RenderComponent)
+[2016.07.05-10.52.38:496][995]LogEditorViewport: Clicking on Component (context menu): PaperSpriteComponent (RenderComponent)
+[2016.07.05-10.52.53:905][323]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Background_Sprite)
+[2016.07.05-10.53.03:805][510]LogEditorViewport: Clicking on Actor (context menu): PaperSpriteActor (Background_Sprite)
+[2016.07.05-10.54.06:623][683]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Background_Sprite)
+[2016.07.05-10.54.08:622][745]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Ledge_12)
+[2016.07.05-10.54.10:981][824]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Ledge_13)
+[2016.07.05-10.54.12:482][874]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Ledge_17)
+[2016.07.05-10.54.13:674][913]Cmd: DELETE
+[2016.07.05-10.54.13:674][913]Cmd: ACTOR DELETE
+[2016.07.05-10.54.13:674][913]LogEditorActor: Deleted Actor: PaperSpriteActor
+[2016.07.05-10.54.13:691][913]LogEditorActor: Deleted 1 Actors (0.017 secs)
+[2016.07.05-10.54.14:479][941]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Ledge_25)
+[2016.07.05-10.54.14:557][941]Cmd: DELETE
+[2016.07.05-10.54.14:557][941]Cmd: ACTOR DELETE
+[2016.07.05-10.54.14:558][941]LogEditorActor: Deleted Actor: PaperSpriteActor
+[2016.07.05-10.54.14:573][941]LogEditorActor: Deleted 1 Actors (0.016 secs)
+[2016.07.05-10.54.15:154][963]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Ledge_34)
+[2016.07.05-10.54.15:232][963]Cmd: DELETE
+[2016.07.05-10.54.15:232][963]Cmd: ACTOR DELETE
+[2016.07.05-10.54.15:233][963]LogEditorActor: Deleted Actor: PaperSpriteActor
+[2016.07.05-10.54.15:245][963]LogEditorActor: Deleted 1 Actors (0.013 secs)
+[2016.07.05-10.54.18:354][ 70]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Background_Sprite)
+[2016.07.05-10.54.27:554][219]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Background_Sprite)
+[2016.07.05-10.54.28:731][236]LogEditorViewport: Clicking on Actor (LMB): 2DSideScrollerCharacter_C (2DSideScrollerCharacter)
+[2016.07.05-10.54.29:453][241]LogEditorViewport: Clicking on Component (LMB): CapsuleComponent (CollisionCylinder)
+[2016.07.05-10.54.40:343][422]LogEditorViewport: Clicking on Actor (LMB): TextRenderActor (TemplateLabel)
+[2016.07.05-10.54.41:421][437]LogEditorViewport: Clicking on Actor (LMB): PlayerStart (NetworkPlayerStart)
+[2016.07.05-10.54.42:996][462]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Background_Sprite)
+[2016.07.05-10.54.43:816][473]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Background_Sprite)
+[2016.07.05-10.54.45:370][496]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Background_Sprite)
+[2016.07.05-10.54.46:341][510]LogEditorViewport: Clicking on Actor (LMB): TextRenderActor (TemplateLabel)
+[2016.07.05-10.54.46:815][514]LogEditorViewport: Clicking on Component (LMB): TextRenderComponent (NewTextRenderComponent)
+[2016.07.05-10.54.46:938][515]LogEditorViewport: Clicking on Component (LMB): TextRenderComponent (NewTextRenderComponent)
+[2016.07.05-10.54.50:132][570]LogEditorViewport: Clicking on Actor (context menu): PaperSpriteActor (Background_Sprite)
+[2016.07.05-10.54.50:974][582]LogEditorViewport: Clicking on Actor (context menu): PaperSpriteActor (Background_Sprite)
+[2016.07.05-10.54.52:283][601]LogEditorViewport: Clicking on Actor (LMB): TextRenderActor (TemplateLabel)
+[2016.07.05-10.54.53:255][616]LogEditorViewport: Clicking on Actor (context menu): PaperSpriteActor (Background_Sprite)
+[2016.07.05-10.54.57:271][673]LogEditorViewport: Clicking on Actor (LMB): TextRenderActor (TemplateLabel)
+[2016.07.05-10.54.58:141][686]LogEditorViewport: Clicking on Actor (context menu): TextRenderActor (TemplateLabel)
+[2016.07.05-10.55.02:889][762]Cmd: DELETE
+[2016.07.05-10.55.02:889][762]Cmd: ACTOR DELETE
+[2016.07.05-10.55.02:890][762]LogEditorActor: Deleted Actor: TextRenderActor
+[2016.07.05-10.55.02:902][762]LogEditorActor: Deleted 1 Actors (0.014 secs)
+[2016.07.05-10.55.04:106][785]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Ledge_14)
+[2016.07.05-10.55.04:372][788]Cmd: DELETE
+[2016.07.05-10.55.04:372][788]Cmd: ACTOR DELETE
+[2016.07.05-10.55.04:373][788]LogEditorActor: Deleted Actor: PaperSpriteActor
+[2016.07.05-10.55.04:389][788]LogEditorActor: Deleted 1 Actors (0.017 secs)
+[2016.07.05-10.55.04:897][797]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Ledge_13)
+[2016.07.05-10.55.05:052][797]Cmd: DELETE
+[2016.07.05-10.55.05:052][797]Cmd: ACTOR DELETE
+[2016.07.05-10.55.05:053][797]LogEditorActor: Deleted Actor: PaperSpriteActor
+[2016.07.05-10.55.05:067][797]LogEditorActor: Deleted 1 Actors (0.015 secs)
+[2016.07.05-10.55.05:643][809]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Background_Sprite)
+[2016.07.05-10.55.05:805][809]Cmd: DELETE
+[2016.07.05-10.55.05:805][809]Cmd: ACTOR DELETE
+[2016.07.05-10.55.05:805][809]LogEditorActor: Deleted Actor: PaperSpriteActor
+[2016.07.05-10.55.05:817][809]LogEditorActor: Deleted 1 Actors (0.012 secs)
+[2016.07.05-10.55.06:623][826]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Ledge_12)
+[2016.07.05-10.55.08:199][854]Cmd: TRANSACTION UNDO
+[2016.07.05-10.55.08:223][854]LogEditorTransaction: Undo Clicking on Actors
+[2016.07.05-10.55.09:337][873]Cmd: TRANSACTION UNDO
+[2016.07.05-10.55.09:337][873]LogEditorTransaction: Undo Delete Actors
+[2016.07.05-10.55.11:002][898]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Ledge_12)
+[2016.07.05-10.55.13:107][933]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Background_Sprite)
+[2016.07.05-10.55.13:979][945]LogEditorViewport: Clicking on Actor (LMB): PlayerStart (NetworkPlayerStart)
+[2016.07.05-10.55.19:594][ 54]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2016.07.05-10.55.22:503][130]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Ledge_12)
+[2016.07.05-10.55.23:381][154]Cmd: DELETE
+[2016.07.05-10.55.23:382][154]Cmd: ACTOR DELETE
+[2016.07.05-10.55.23:382][154]LogEditorActor: Deleted Actor: PaperSpriteActor
+[2016.07.05-10.55.23:396][154]LogEditorActor: Deleted 1 Actors (0.014 secs)
+[2016.07.05-10.55.24:491][188]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Ledge_27)
+[2016.07.05-10.55.24:969][201]Cmd: DELETE
+[2016.07.05-10.55.24:969][201]Cmd: ACTOR DELETE
+[2016.07.05-10.55.24:970][201]LogEditorActor: Deleted Actor: PaperSpriteActor
+[2016.07.05-10.55.24:985][201]LogEditorActor: Deleted 1 Actors (0.015 secs)
+[2016.07.05-10.55.25:659][222]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Ledge_28)
+[2016.07.05-10.55.25:812][223]Cmd: DELETE
+[2016.07.05-10.55.25:812][223]Cmd: ACTOR DELETE
+[2016.07.05-10.55.25:813][223]LogEditorActor: Deleted Actor: PaperSpriteActor
+[2016.07.05-10.55.25:825][223]LogEditorActor: Deleted 1 Actors (0.013 secs)
+[2016.07.05-10.55.26:336][240]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Ledge_29)
+[2016.07.05-10.55.26:426][240]Cmd: DELETE
+[2016.07.05-10.55.26:426][240]Cmd: ACTOR DELETE
+[2016.07.05-10.55.26:427][240]LogEditorActor: Deleted Actor: PaperSpriteActor
+[2016.07.05-10.55.26:440][240]LogEditorActor: Deleted 1 Actors (0.014 secs)
+[2016.07.05-10.55.27:009][259]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Ledge_30)
+[2016.07.05-10.55.27:162][260]Cmd: DELETE
+[2016.07.05-10.55.27:162][260]Cmd: ACTOR DELETE
+[2016.07.05-10.55.27:163][260]LogEditorActor: Deleted Actor: PaperSpriteActor
+[2016.07.05-10.55.27:176][260]LogEditorActor: Deleted 1 Actors (0.014 secs)
+[2016.07.05-10.55.27:808][281]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Ledge_31)
+[2016.07.05-10.55.27:894][281]Cmd: DELETE
+[2016.07.05-10.55.27:894][281]Cmd: ACTOR DELETE
+[2016.07.05-10.55.27:894][281]LogEditorActor: Deleted Actor: PaperSpriteActor
+[2016.07.05-10.55.27:907][281]LogEditorActor: Deleted 1 Actors (0.013 secs)
+[2016.07.05-10.55.29:783][340]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Ledge_32)
+[2016.07.05-10.55.35:292][504]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Ledge_26)
+[2016.07.05-10.55.45:936][776]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Background_Sprite)
+[2016.07.05-10.55.59:257][143]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel.2DSideScrollerExampleMap' with GeneratedClass '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap_C' with ClassGeneratedBy '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel.2DSideScrollerExampleMap'
+[2016.07.05-10.55.59:257][143]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.07.05-10.55.59:258][143]PIE: New page: PIE session: 2DSideScrollerExampleMap (Jul 5, 2016, 1:55:59 PM)
+[2016.07.05-10.55.59:258][143]LogPlayLevel: Creating play world package: /Game/2DSideScrollerBP/Maps/UEDPIE_0_2DSideScrollerExampleMap
+[2016.07.05-10.55.59:262][143]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003750s)
+[2016.07.05-10.55.59:263][143]LogAIModule: Creating AISystem for world 2DSideScrollerExampleMap
+[2016.07.05-10.55.59:263][143]LogPlayLevel: PIE: World Init took: (0.001260s)
+[2016.07.05-10.55.59:263][143]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap to /Game/2DSideScrollerBP/Maps/UEDPIE_0_2DSideScrollerExampleMap.2DSideScrollerExampleMap (0.005333s)
+[2016.07.05-10.55.59:284][143]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.07.05-10.55.59:299][143]LogInit: FAudioDevice initialized.
+[2016.07.05-10.55.59:371][143]LogWorld: Game class is '2DSideScrollerGameMode_C'
+[2016.07.05-10.55.59:376][143]LogWorld: Bringing World /Game/2DSideScrollerBP/Maps/UEDPIE_0_2DSideScrollerExampleMap.2DSideScrollerExampleMap up for play (max tick rate 60) at 2016.07.05-12.55.59
+[2016.07.05-10.55.59:377][143]LogWorld: Bringing up level for play took: 0.004252
+[2016.07.05-10.55.59:379][143]PIE: Info Play in editor start time for /Game/2DSideScrollerBP/Maps/UEDPIE_0_2DSideScrollerExampleMap 0.367
+[2016.07.05-10.55.59:379][143]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel.2DSideScrollerExampleMap' with GeneratedClass '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap_C' with ClassGeneratedBy '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel.2DSideScrollerExampleMap'
+[2016.07.05-10.56.12:584][609]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel.2DSideScrollerExampleMap' with GeneratedClass '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap_C' with ClassGeneratedBy '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel.2DSideScrollerExampleMap'
+[2016.07.05-10.56.12:664][609]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel.2DSideScrollerExampleMap' with GeneratedClass '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap_C' with ClassGeneratedBy '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel.2DSideScrollerExampleMap'
+[2016.07.05-10.56.42:580][412]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (RightEdge)
+[2016.07.05-10.56.51:677][692]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel.2DSideScrollerExampleMap' with GeneratedClass '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap_C' with ClassGeneratedBy '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel.2DSideScrollerExampleMap'
+[2016.07.05-10.56.51:677][692]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.07.05-10.56.51:677][692]PIE: New page: PIE session: 2DSideScrollerExampleMap (Jul 5, 2016, 1:56:51 PM)
+[2016.07.05-10.56.51:677][692]LogPlayLevel: Creating play world package: /Game/2DSideScrollerBP/Maps/UEDPIE_0_2DSideScrollerExampleMap
+[2016.07.05-10.56.51:681][692]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003155s)
+[2016.07.05-10.56.51:681][692]LogAIModule: Creating AISystem for world 2DSideScrollerExampleMap
+[2016.07.05-10.56.51:681][692]LogPlayLevel: PIE: World Init took: (0.000780s)
+[2016.07.05-10.56.51:682][692]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap to /Game/2DSideScrollerBP/Maps/UEDPIE_0_2DSideScrollerExampleMap.2DSideScrollerExampleMap (0.004214s)
+[2016.07.05-10.56.51:703][692]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.07.05-10.56.51:718][692]LogInit: FAudioDevice initialized.
+[2016.07.05-10.56.51:790][692]LogWorld: Game class is '2DSideScrollerGameMode_C'
+[2016.07.05-10.56.51:795][692]LogWorld: Bringing World /Game/2DSideScrollerBP/Maps/UEDPIE_0_2DSideScrollerExampleMap.2DSideScrollerExampleMap up for play (max tick rate 60) at 2016.07.05-12.56.51
+[2016.07.05-10.56.51:796][692]LogWorld: Bringing up level for play took: 0.004171
+[2016.07.05-10.56.51:798][692]PIE: Info Play in editor start time for /Game/2DSideScrollerBP/Maps/UEDPIE_0_2DSideScrollerExampleMap 0.786
+[2016.07.05-10.56.51:798][692]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel.2DSideScrollerExampleMap' with GeneratedClass '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap_C' with ClassGeneratedBy '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel.2DSideScrollerExampleMap'
+[2016.07.05-10.57.01:731][ 39]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel.2DSideScrollerExampleMap' with GeneratedClass '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap_C' with ClassGeneratedBy '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel.2DSideScrollerExampleMap'
+[2016.07.05-10.57.01:809][ 39]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel.2DSideScrollerExampleMap' with GeneratedClass '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap_C' with ClassGeneratedBy '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel.2DSideScrollerExampleMap'
+[2016.07.05-10.57.51:790][532]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (RightEdge)
+[2016.07.05-10.58.21:690][459]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Ledge_26)
+[2016.07.05-10.58.23:941][529]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (RightEdge)
+[2016.07.05-10.58.34:602][792]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (RightEdge)
+[2016.07.05-10.58.40:796][921]Cmd: TRANSACTION UNDO
+[2016.07.05-10.58.40:797][921]LogEditorTransaction: Undo Clicking on Actors
+[2016.07.05-10.58.41:842][940]Cmd: TRANSACTION UNDO
+[2016.07.05-10.58.41:842][940]LogEditorTransaction: Undo Set actor rotation
+[2016.07.05-10.58.44:348][997]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Ledge_26)
+[2016.07.05-10.58.50:854][118]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (RightEdge)
+[2016.07.05-10.58.58:654][248]LogEditorViewport: Clicking Background
+[2016.07.05-10.59.00:055][282]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (Ledge_26)
+[2016.07.05-10.59.03:935][359]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (RightEdge)
+[2016.07.05-10.59.08:057][426]LogEditorViewport: Clicking Background
+[2016.07.05-10.59.24:437][802]LogEditorViewport: Clicking on Actor (LMB): PostProcessVolume (GlobalPostProcessSettings)
+[2016.07.05-10.59.34:068][  5]LogEditorViewport: Clicking on Actor (LMB): PaperSpriteActor (LeftEdge)
+[2016.07.05-10.59.45:615][252]LogEditorViewport: Clicking on Actor (LMB): 2DSideScrollerCharacter_C (2DSideScrollerCharacter)
+[2016.07.05-11.00.32:915][240]LogEditorViewport: Clicking on Actor (LMB): PlayerStart (NetworkPlayerStart)
+[2016.07.05-11.00.48:842][552]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2016.07.05-11.00.50:576][591]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel.2DSideScrollerExampleMap' with GeneratedClass '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap_C' with ClassGeneratedBy '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel.2DSideScrollerExampleMap'
+[2016.07.05-11.00.50:576][591]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.07.05-11.00.50:576][591]PIE: New page: PIE session: 2DSideScrollerExampleMap (Jul 5, 2016, 2:00:50 PM)
+[2016.07.05-11.00.50:576][591]LogPlayLevel: Creating play world package: /Game/2DSideScrollerBP/Maps/UEDPIE_0_2DSideScrollerExampleMap
+[2016.07.05-11.00.50:581][591]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004725s)
+[2016.07.05-11.00.50:582][591]LogAIModule: Creating AISystem for world 2DSideScrollerExampleMap
+[2016.07.05-11.00.50:582][591]LogPlayLevel: PIE: World Init took: (0.000997s)
+[2016.07.05-11.00.50:582][591]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap to /Game/2DSideScrollerBP/Maps/UEDPIE_0_2DSideScrollerExampleMap.2DSideScrollerExampleMap (0.006055s)
+[2016.07.05-11.00.50:615][591]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.07.05-11.00.50:630][591]LogInit: FAudioDevice initialized.
+[2016.07.05-11.00.50:702][591]LogWorld: Game class is '2DSideScrollerGameMode_C'
+[2016.07.05-11.00.50:707][591]LogWorld: Bringing World /Game/2DSideScrollerBP/Maps/UEDPIE_0_2DSideScrollerExampleMap.2DSideScrollerExampleMap up for play (max tick rate 60) at 2016.07.05-13.00.50
+[2016.07.05-11.00.50:708][591]LogWorld: Bringing up level for play took: 0.004242
+[2016.07.05-11.00.50:710][591]PIE: Info Play in editor start time for /Game/2DSideScrollerBP/Maps/UEDPIE_0_2DSideScrollerExampleMap -0.302
+[2016.07.05-11.00.50:710][591]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel.2DSideScrollerExampleMap' with GeneratedClass '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap_C' with ClassGeneratedBy '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel.2DSideScrollerExampleMap'
+[2016.07.05-11.00.53:428][660]LogCharacterMovement: 2DSideScrollerCharacter_254 is stuck and failed to move! Velocity: X=-600.000 Y=0.000 Z=0.000 Location: X=-18967.721 Y=-13.431 Z=374.229 Normal: X=0.000 Y=0.000 Z=1.000 PenetrationDepth:0.000 Actor:Ledge_26 Component:RenderComponent BoneName:None
+[2016.07.05-11.00.56:094][728]LogCharacterMovement: 2DSideScrollerCharacter_254 is stuck and failed to move! Velocity: X=600.000 Y=0.000 Z=0.000 Location: X=-18790.428 Y=-13.431 Z=374.229 Normal: X=0.000 Y=0.000 Z=1.000 PenetrationDepth:0.000 Actor:Ledge_26 Component:RenderComponent BoneName:None
+[2016.07.05-11.01.02:750][898]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel.2DSideScrollerExampleMap' with GeneratedClass '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap_C' with ClassGeneratedBy '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel.2DSideScrollerExampleMap'
+[2016.07.05-11.01.02:829][898]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel.2DSideScrollerExampleMap' with GeneratedClass '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap_C' with ClassGeneratedBy '/Game/2DSideScrollerBP/Maps/2DSideScrollerExampleMap.2DSideScrollerExampleMap:PersistentLevel.2DSideScrollerExampleMap'
+[2016.07.05-11.01.21:313][243]LogEditorViewport: Clicking on Actor (LMB): 2DSideScrollerCharacter_C (2DSideScrollerCharacter)
+[2016.07.05-11.01.21:418][243]LogEditorViewport: Clicking on Component (LMB): PaperFlipbookComponent (Sprite0)
+[2016.07.05-11.01.57:508][583]LogSavePackage: Save=2028.33ms
+[2016.07.05-11.01.57:508][583]LogSavePackage: Moving '../../../../../../Users/Scott/Documents/Unreal Projects/platformer/Saved/2DSideScrollerExampleMap_Auto10
